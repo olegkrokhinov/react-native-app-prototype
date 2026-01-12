@@ -44,7 +44,7 @@ jobs:
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         env:
           APP_VARIANT: production # Environment variable used in app.config.js
-        run: eas build --platform all --profile production --non-interactive --auto-submit
+        run: eas build --platform all --profile production --non-interactive
 
       # Step 5: PREVIEW BUILD
       # Executed after merge to dev OR during a PR to master (to test a Hotfix).
