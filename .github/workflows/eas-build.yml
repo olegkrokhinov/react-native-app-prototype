@@ -19,6 +19,8 @@ jobs:
   eas-build:
     name: Expo Build Job
     runs-on: ubuntu-latest
+    # Environment in which we approve the start of the build process
+    environment: master
     steps:
       # Step 1: Clone the repository code to the virtual machine
       - name: 🏗 Checkout repository
